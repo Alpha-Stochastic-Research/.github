@@ -1,113 +1,119 @@
-name: Feature Request
-description: Suggest a new feature, improvement, or enhancement for an ASR repository.
-title: "[Feature]: "
+name: Question
+description: Ask a question about an ASR repository, implementation, model, paper, or research topic.
+title: "[Question]: "
 labels:
-  - enhancement
-  - needs-triage
+  - question
+  - needs-response
 assignees: []
 
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for suggesting an improvement.
+        Thank you for your question.
 
-        Please describe the proposed feature clearly and explain how it would improve the project, the research workflow, or the reproducibility of the results.
+        Please provide enough context so that the ASR community can give a precise and useful answer.
+        For mathematical, numerical, or research-related questions, include formulas, references, parameters,
+        or code snippets whenever relevant.
 
   - type: input
     id: repository
     attributes:
-      label: Repository
-      description: Which ASR repository is this feature request related to?
+      label: Related Repository
+      description: Which ASR repository is your question related to?
       placeholder: asr-theory-of-speculation
     validations:
-      required: true
-
-  - type: textarea
-    id: summary
-    attributes:
-      label: Feature Summary
-      description: Provide a concise summary of the proposed feature.
-      placeholder: Describe the feature in one or two paragraphs.
-    validations:
-      required: true
-
-  - type: textarea
-    id: motivation
-    attributes:
-      label: Motivation
-      description: Why is this feature useful or important?
-      placeholder: |
-        Explain the problem this feature solves.
-        Describe how it improves research, usability, reproducibility, or documentation.
-    validations:
-      required: true
+      required: false
 
   - type: dropdown
-    id: category
+    id: question_type
     attributes:
-      label: Feature Category
-      description: What type of improvement is this?
+      label: Question Type
+      description: What is your question mainly about?
       options:
-        - New research implementation
-        - Numerical method
-        - Mathematical model
-        - Python code improvement
-        - Documentation improvement
-        - LaTeX or paper improvement
-        - Visualization or figures
-        - Notebook or example
-        - GitHub Actions workflow
-        - Repository structure
+        - Usage
+        - Installation
+        - Python implementation
+        - Mathematical derivation
+        - Numerical simulation
+        - Reproducibility
+        - Documentation
+        - LaTeX paper
+        - Research concept
+        - Literature reference
+        - GitHub workflow
         - Other
     validations:
       required: true
 
   - type: textarea
-    id: proposed_solution
+    id: question
     attributes:
-      label: Proposed Solution
-      description: Describe how you think this feature could be implemented.
+      label: Question
+      description: Ask your question clearly.
       placeholder: |
-        Explain the implementation approach.
-        Include relevant functions, files, models, equations, or documentation sections if applicable.
+        Describe what you would like to understand or clarify.
     validations:
       required: true
 
   - type: textarea
-    id: alternatives
+    id: context
     attributes:
-      label: Alternatives Considered
-      description: Have you considered any alternative approaches?
-      placeholder: Describe any alternative methods or designs.
+      label: Context
+      description: Provide any relevant background, code, equations, or references.
+      placeholder: |
+        Repository:
+        File or function:
+        Equation or model:
+        Parameters:
+        Reference:
+    validations:
+      required: false
 
   - type: textarea
-    id: scientific_context
+    id: attempted
     attributes:
-      label: Scientific or Technical Context
-      description: If relevant, provide mathematical, statistical, financial, or computational context.
+      label: What Have You Tried?
+      description: If applicable, describe what you have already tried or checked.
       placeholder: |
-        Related model:
-        Relevant equation:
-        Numerical method:
-        Financial application:
-        Literature reference:
+        I have tried...
+        I checked...
+        I expected...
+    validations:
+      required: false
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Code Snippet
+      description: If your question involves code, include a minimal example.
+      render: python
+      placeholder: |
+        # Optional minimal code example
+    validations:
+      required: false
+
+  - type: textarea
+    id: output
+    attributes:
+      label: Output or Error Message
+      description: If relevant, paste the output, warning, or error message.
+      render: shell
+      placeholder: |
+        Optional output or traceback
+    validations:
+      required: false
 
   - type: textarea
     id: references
     attributes:
       label: References
-      description: Add papers, books, articles, documentation, or related repositories.
+      description: Add any papers, books, links, or documentation pages related to your question.
       placeholder: |
         - Author, Title, Year
         - DOI / SSRN / arXiv / GitHub link
-
-  - type: textarea
-    id: additional
-    attributes:
-      label: Additional Information
-      description: Add mockups, diagrams, screenshots, examples, or any other useful context.
-      placeholder: Add any additional details here.
+    validations:
+      required: false
 
   - type: checkboxes
     id: checklist
@@ -116,7 +122,7 @@ body:
       options:
         - label: I have searched existing issues and discussions.
           required: true
-        - label: This feature request is aligned with the scientific or educational goals of ASR.
+        - label: I have provided enough context for others to understand the question.
           required: true
-        - label: I have provided enough context to understand the motivation and expected value.
+        - label: I understand that research-related answers may require references, assumptions, or numerical validation.
           required: true
