@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use Alpha Stochastic Research projects in your work, please cite them as below."
+
+title: "Alpha Stochastic Research"
+type: software
+
+authors:
+  - name: "Alpha KAbinet TOURE"
+    affiliation: "Founder and Researcher, Alpha Stochastic Research"
+    email: "research@asr-lab.online"
+
+  - name: "Alpha Stochastic Research"
+    affiliation: "Independent Quantitative Finance Research Laboratory"
+    email: "research@asr-lab.online"
+
+abstract: >
+  Alpha Stochastic Research (ASR) is an independent quantitative finance
+  research laboratory dedicated to advancing rigorous, transparent, and
+  reproducible research at the intersection of financial markets,
+  mathematics, statistics, stochastic modelling, scientific computing,
+  and artificial intelligence.
+
+keywords:
+  - quantitative finance
+  - financial mathematics
+  - stochastic modelling
+  - scientific computing
+  - artificial intelligence
+  - open science
+  - reproducible research
+
+license: MIT
+
+repository-code: "https://github.com/Alpha-Stochastic-Research"
+url: "https://asr-lab.online"
+
+preferred-citation:
+  type: software
+  title: "Alpha Stochastic Research Open-Source Research Ecosystem"
+  authors:
+    - name: "Alpha Kabinet TOURE"
+      affiliation: "Founder and Researcher, Alpha Stochastic Research"
+      email: "research@asr-lab.online"
+
+    - name: "Alpha Stochastic Research"
+      affiliation: "Independent Quantitative Finance Research Laboratory"
+      email: "research@asr-lab.online"
+
+  year: 2026
+  url: "https://github.com/Alpha-Stochastic-Research"
