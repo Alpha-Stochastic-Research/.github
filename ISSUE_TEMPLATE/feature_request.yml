@@ -1,1 +1,122 @@
+name: Feature Request
+description: Suggest a new feature, improvement, or enhancement for an ASR repository.
+title: "[Feature]: "
+labels:
+  - enhancement
+  - needs-triage
+assignees: []
 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement.
+
+        Please describe the proposed feature clearly and explain how it would improve the project, the research workflow, or the reproducibility of the results.
+
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      description: Which ASR repository is this feature request related to?
+      placeholder: asr-theory-of-speculation
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: Provide a concise summary of the proposed feature.
+      placeholder: Describe the feature in one or two paragraphs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this feature useful or important?
+      placeholder: |
+        Explain the problem this feature solves.
+        Describe how it improves research, usability, reproducibility, or documentation.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: What type of improvement is this?
+      options:
+        - New research implementation
+        - Numerical method
+        - Mathematical model
+        - Python code improvement
+        - Documentation improvement
+        - LaTeX or paper improvement
+        - Visualization or figures
+        - Notebook or example
+        - GitHub Actions workflow
+        - Repository structure
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution
+      description: Describe how you think this feature could be implemented.
+      placeholder: |
+        Explain the implementation approach.
+        Include relevant functions, files, models, equations, or documentation sections if applicable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative approaches?
+      placeholder: Describe any alternative methods or designs.
+
+  - type: textarea
+    id: scientific_context
+    attributes:
+      label: Scientific or Technical Context
+      description: If relevant, provide mathematical, statistical, financial, or computational context.
+      placeholder: |
+        Related model:
+        Relevant equation:
+        Numerical method:
+        Financial application:
+        Literature reference:
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Add papers, books, articles, documentation, or related repositories.
+      placeholder: |
+        - Author, Title, Year
+        - DOI / SSRN / arXiv / GitHub link
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Add mockups, diagrams, screenshots, examples, or any other useful context.
+      placeholder: Add any additional details here.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues and discussions.
+          required: true
+        - label: This feature request is aligned with the scientific or educational goals of ASR.
+          required: true
+        - label: I have provided enough context to understand the motivation and expected value.
+          required: true
