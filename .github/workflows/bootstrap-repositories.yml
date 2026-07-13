@@ -1,0 +1,41 @@
+name: Bootstrap repositories and projects
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview changes without applying them"
+        required: true
+        type: boolean
+        default: true
+  schedule:
+    - cron: "23 */6 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: asr-repository-bootstrap
+  cancel-in-progress: false
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out administration repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply repository access and project policy
+        env:
+          ASR_ADMIN_TOKEN: ${{ secrets.ASR_ORG_ADMIN_TOKEN }}
+          ASR_ORG: Alpha-Stochastic-Research
+          ASR_CONFIG_PATH: config/repository-access.json
+          ASR_DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+        run: python scripts/bootstrap_repositories.py
