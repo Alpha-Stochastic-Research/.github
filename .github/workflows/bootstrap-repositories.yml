@@ -21,7 +21,7 @@ concurrency:
 jobs:
   bootstrap:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
 
     steps:
       - name: Check out administration repository
@@ -35,6 +35,7 @@ jobs:
       - name: Apply repository access and project policy
         env:
           ASR_ADMIN_TOKEN: ${{ secrets.ASR_ORG_ADMIN_TOKEN }}
+          ASR_PROJECT_TOKEN: ${{ secrets.ASR_PROJECT_TOKEN }}
           ASR_ORG: Alpha-Stochastic-Research
           ASR_CONFIG_PATH: config/repository-access.json
           ASR_DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
