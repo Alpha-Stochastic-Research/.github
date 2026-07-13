@@ -1,0 +1,220 @@
+{
+  "organization": "Alpha-Stochastic-Research",
+  "project_title_template": "{repository} — Project",
+  "profiles": [
+    {
+      "name": "organization-governance",
+      "patterns": [
+        ".github"
+      ],
+      "icon": "🏛️",
+      "label": "Organization Governance",
+      "short_description": "Organization policy, automation, security and shared GitHub standards.",
+      "primary_teams": [
+        "ASR Leadership",
+        "ASR Engineering",
+        "release-admins"
+      ],
+      "stages": [
+        "Policy",
+        "Implementation",
+        "Validation",
+        "Adoption"
+      ],
+      "starter_items": [
+        "Review organization policy baseline",
+        "Validate automation and security controls",
+        "Track adoption across repositories"
+      ]
+    },
+    {
+      "name": "website-communications",
+      "patterns": [
+        "asr-website"
+      ],
+      "icon": "🌐",
+      "label": "Website & Communications",
+      "short_description": "Website delivery, institutional communication, SEO and platform operations.",
+      "primary_teams": [
+        "ASR Website Administrators",
+        "ASR Communications and SEO",
+        "ASR Events and Community",
+        "ASR Engineering"
+      ],
+      "stages": [
+        "Editorial plan",
+        "Build",
+        "Review",
+        "Publish",
+        "Measure"
+      ],
+      "starter_items": [
+        "Plan the next editorial and SEO release",
+        "Validate website changes and accessibility",
+        "Publish, monitor and report outcomes"
+      ]
+    },
+    {
+      "name": "onboarding-recruitment",
+      "patterns": [
+        "asr-onboarding",
+        "asr-recruitment-*"
+      ],
+      "icon": "🤝",
+      "label": "Onboarding & Recruitment",
+      "short_description": "Candidate review, contributor onboarding, mentorship and access progression.",
+      "primary_teams": [
+        "ASR Contributors",
+        "asr-onboarding-mentors",
+        "asr-onboarding-participants",
+        "ASR Leadership"
+      ],
+      "stages": [
+        "Intake",
+        "Screening",
+        "Mentoring",
+        "Validation",
+        "Decision"
+      ],
+      "starter_items": [
+        "Review the active onboarding or recruitment queue",
+        "Complete mentoring and validation checkpoints",
+        "Record the final decision and next access level"
+      ]
+    },
+    {
+      "name": "administration",
+      "patterns": [
+        "asr-admin-*"
+      ],
+      "icon": "🛡️",
+      "label": "Administration & Operations",
+      "short_description": "Administrative tooling, governance operations, permissions and auditability.",
+      "primary_teams": [
+        "ASR Leadership",
+        "ASR Engineering",
+        "release-admins"
+      ],
+      "stages": [
+        "Request",
+        "Risk review",
+        "Implementation",
+        "Audit"
+      ],
+      "starter_items": [
+        "Review the administrative operations backlog",
+        "Validate permissions, secrets and audit controls",
+        "Ship and document the next operational improvement"
+      ]
+    },
+    {
+      "name": "repository-template",
+      "patterns": [
+        "*-template"
+      ],
+      "icon": "🧩",
+      "label": "Repository Template",
+      "short_description": "Reusable repository standards, automation and generated-project quality.",
+      "primary_teams": [
+        "ASR Engineering",
+        "ASR Reproducibility Review",
+        "ASR Research Council",
+        "release-admins"
+      ],
+      "stages": [
+        "Standard",
+        "Implement",
+        "Generate",
+        "Validate",
+        "Release"
+      ],
+      "starter_items": [
+        "Review template standards and required files",
+        "Generate and validate a test repository",
+        "Publish the next template revision"
+      ]
+    },
+    {
+      "name": "research-reproducibility",
+      "patterns": [
+        "asr-theory-*",
+        "asr-var-*",
+        "*research*",
+        "*reproducibility*"
+      ],
+      "icon": "🔬",
+      "label": "Research & Reproducibility",
+      "short_description": "Scientific modelling, experiments, independent review and publication readiness.",
+      "primary_teams": [
+        "ASR Researchers",
+        "ASR Research Council",
+        "ASR Reproducibility Review",
+        "ASR Engineering"
+      ],
+      "stages": [
+        "Question",
+        "Method",
+        "Experiment",
+        "Reproduction",
+        "Publication"
+      ],
+      "starter_items": [
+        "Define the research question, assumptions and acceptance criteria",
+        "Implement experiments, tests and reproducible environments",
+        "Complete independent review and publication packaging"
+      ]
+    },
+    {
+      "name": "python-package",
+      "patterns": [
+        "asr-open-sc",
+        "asr-python-*",
+        "asr-*package*"
+      ],
+      "icon": "📦",
+      "label": "Python Package Delivery",
+      "short_description": "Package engineering, testing, documentation, release and maintenance.",
+      "primary_teams": [
+        "ASR Engineering",
+        "ASR Researchers",
+        "ASR Reproducibility Review",
+        "release-admins"
+      ],
+      "stages": [
+        "Plan",
+        "Build",
+        "Test",
+        "Document",
+        "Release"
+      ],
+      "starter_items": [
+        "Plan the next package milestone and compatibility target",
+        "Implement changes with tests and reproducibility checks",
+        "Validate documentation and prepare the release"
+      ]
+    }
+  ],
+  "default_profile": {
+    "name": "general",
+    "icon": "📋",
+    "label": "Repository Delivery",
+    "short_description": "Planning, execution, review and delivery for this repository.",
+    "primary_teams": [
+      "ASR Engineering",
+      "ASR Leadership",
+      "release-admins"
+    ],
+    "stages": [
+      "Backlog",
+      "In progress",
+      "Review",
+      "Done"
+    ],
+    "starter_items": [
+      "Define the current repository objective",
+      "Prioritize the next delivery milestone",
+      "Validate completion criteria and documentation"
+    ]
+  }
+}
+
