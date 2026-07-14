@@ -1,0 +1,47 @@
+name: Publish an ASR announcement
+description: Publish a general announcement or a repository-specific announcement.
+title: "[Announcement] "
+labels:
+  - asr-announcement-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Publication is restricted to release-admins, ASR Leadership and ASR Researchers.
+        Closing an active source issue withdraws the announcement from generated digests.
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - General — all repositories
+        - Specific — selected repositories
+    validations:
+      required: true
+  - type: input
+    id: targets
+    attributes:
+      label: Target repositories
+      description: Required for a specific announcement. Use comma-separated repository names.
+      placeholder: asr-theory-of-speculation, asr-open-sc
+  - type: input
+    id: announcement_title
+    attributes:
+      label: Announcement title
+      placeholder: Research review window opens Monday
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: Announcement message
+      description: Markdown is supported.
+      placeholder: Provide the complete announcement and any required action.
+    validations:
+      required: true
+  - type: input
+    id: expiry
+    attributes:
+      label: Expiry date (optional)
+      description: Use YYYY-MM-DD. Leave empty for no automatic expiry.
+      placeholder: "2026-09-30"
