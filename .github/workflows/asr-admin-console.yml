@@ -1,0 +1,54 @@
+name: Reconcile ASR admin console
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview all changes without mutating GitHub"
+        required: true
+        type: boolean
+        default: true
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/asr-admin-console.yml"
+      - "admin-console-template/**"
+      - "config/asr-admin-console.json"
+      - "config/repository-access.json"
+      - "scripts/asr_admin_console.py"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: asr-admin-console-reconcile
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Check out organization automation
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Reconcile admin console, announcements, repository requests and project intake
+        env:
+          ASR_ORG_ADMIN_TOKEN: ${{ secrets.ASR_ORG_ADMIN_TOKEN }}
+          ASR_PROJECT_TOKEN: ${{ secrets.ASR_PROJECT_TOKEN }}
+          ASR_ADMIN_CONFIG: config/asr-admin-console.json
+          ASR_REPOSITORY_ACCESS_CONFIG: config/repository-access.json
+          ASR_ADMIN_TEMPLATE_ROOT: admin-console-template
+          ASR_DRY_RUN: >-
+            ${{ github.event_name == 'workflow_dispatch' &&
+                inputs.dry_run || false }}
+        run: python scripts/asr_admin_console.py reconcile
