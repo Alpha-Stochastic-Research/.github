@@ -1,0 +1,3 @@
+* @{{ORGANIZATION}}/release-admins @{{ORGANIZATION}}/asr-leadership @{{ORGANIZATION}}/asr-researchers
+/.github/CODEOWNERS @{{ORGANIZATION}}/release-admins
+/data/ @{{ORGANIZATION}}/release-admins @{{ORGANIZATION}}/asr-leadership @{{ORGANIZATION}}/asr-researchers

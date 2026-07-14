@@ -1,0 +1,102 @@
+{
+  "organization": "Alpha-Stochastic-Research",
+  "project_title_template": "{repository} \u2014 Project",
+  "unknown_team_permission": "pull",
+  "team_permissions": {
+    "asr-communications-and-seo": "triage",
+    "asr-contributors": "triage",
+    "asr-engineering": "push",
+    "asr-events-and-community": "triage",
+    "asr-leadership": "maintain",
+    "asr-reproducibility-review": "triage",
+    "asr-research-council": "triage",
+    "asr-researchers": "push",
+    "asr-website-administrators": "triage",
+    "asr-onboarding-mentors": "triage",
+    "asr-onboarding-participants": "pull",
+    "release-admins": "maintain"
+  },
+  "repository_overrides": [
+    {
+      "patterns": [
+        ".github"
+      ],
+      "permissions": {
+        "asr-communications-and-seo": "push",
+        "asr-engineering": "push",
+        "asr-leadership": "maintain",
+        "asr-website-administrators": "triage",
+        "release-admins": "maintain"
+      }
+    },
+    {
+      "patterns": [
+        "asr-admin-console"
+      ],
+      "permissions": {
+        "asr-communications-and-seo": "pull",
+        "asr-contributors": "pull",
+        "asr-engineering": "pull",
+        "asr-events-and-community": "pull",
+        "asr-leadership": "maintain",
+        "asr-reproducibility-review": "pull",
+        "asr-research-council": "pull",
+        "asr-researchers": "push",
+        "asr-website-administrators": "pull",
+        "asr-onboarding-mentors": "pull",
+        "asr-onboarding-participants": "pull",
+        "release-admins": "maintain"
+      }
+    },
+    {
+      "patterns": [
+        "asr-website"
+      ],
+      "permissions": {
+        "asr-communications-and-seo": "push",
+        "asr-engineering": "push",
+        "asr-events-and-community": "push",
+        "asr-leadership": "maintain",
+        "asr-website-administrators": "maintain",
+        "release-admins": "maintain"
+      }
+    },
+    {
+      "patterns": [
+        "*-template"
+      ],
+      "permissions": {
+        "asr-engineering": "maintain",
+        "asr-reproducibility-review": "push",
+        "asr-research-council": "triage",
+        "asr-researchers": "push",
+        "release-admins": "maintain"
+      }
+    },
+    {
+      "patterns": [
+        "asr-theory-*",
+        "*-research-*"
+      ],
+      "permissions": {
+        "asr-engineering": "push",
+        "asr-reproducibility-review": "push",
+        "asr-research-council": "triage",
+        "asr-researchers": "push",
+        "release-admins": "maintain"
+      }
+    },
+    {
+      "patterns": [
+        "asr-open-sc"
+      ],
+      "permissions": {
+        "asr-engineering": "maintain",
+        "asr-reproducibility-review": "triage",
+        "asr-research-council": "triage",
+        "asr-researchers": "push",
+        "release-admins": "maintain"
+      }
+    }
+  ]
+}

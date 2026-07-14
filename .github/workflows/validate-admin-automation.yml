@@ -1,0 +1,44 @@
+name: Validate organization automation
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/**"
+      - "admin-console-template/**"
+      - "config/**"
+      - "scripts/**"
+      - "tests/**"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/**"
+      - "admin-console-template/**"
+      - "config/**"
+      - "scripts/**"
+      - "tests/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate Python
+        run: python -m py_compile scripts/*.py
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -p "test_*.py"
+      - name: Validate JSON configuration
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path("config").glob("*.json"):
+              json.loads(path.read_text(encoding="utf-8"))
+              print(f"validated {path}")
+          PY
