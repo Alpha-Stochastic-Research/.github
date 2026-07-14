@@ -1,0 +1,181 @@
+{
+  "organization": "Alpha-Stochastic-Research",
+  "admin_repository": {
+    "name": "asr-admin-console",
+    "description": "ASR organization administration console for announcements, repository intake and incoming research projects.",
+    "visibility": "private",
+    "default_branch": "main",
+    "topics": [
+      "asr",
+      "administration",
+      "governance",
+      "research-operations"
+    ]
+  },
+  "editor_teams": {
+    "release-admins": "maintain",
+    "asr-leadership": "maintain",
+    "asr-researchers": "push"
+  },
+  "all_other_team_permission": "pull",
+  "announcement_editor_teams": [
+    "release-admins",
+    "asr-leadership",
+    "asr-researchers"
+  ],
+  "repository_templates": {
+    "Blank repository": null,
+    "ASR research template": "asr-research-template",
+    "ASR Python package template": "asr-python-package-template",
+    "ASR reproducibility template": "asr-reproducibility-template"
+  },
+  "incoming_project": {
+    "title": "Incoming projects",
+    "short_description": "Organization-wide research intake with automatically calculated repository progress.",
+    "public": false,
+    "status_options": [
+      {
+        "name": "Proposed",
+        "color": "GRAY",
+        "description": "No repository exists yet."
+      },
+      {
+        "name": "Scoping",
+        "color": "BLUE",
+        "description": "Repository exists and scope is being established."
+      },
+      {
+        "name": "Active",
+        "color": "YELLOW",
+        "description": "Implementation or research work is underway."
+      },
+      {
+        "name": "Review",
+        "color": "PURPLE",
+        "description": "Work is approaching completion and requires review."
+      },
+      {
+        "name": "Complete",
+        "color": "GREEN",
+        "description": "Completion signals have been reached."
+      },
+      {
+        "name": "Blocked",
+        "color": "RED",
+        "description": "Work is inactive while open work remains."
+      }
+    ],
+    "projects": [
+      {
+        "title": "Bachelier 1900 Theory of speculation",
+        "repository_candidates": [
+          "asr-theory-of-speculation"
+        ]
+      },
+      {
+        "title": "VAR vs CVAR",
+        "repository_candidates": [
+          "asr-var-vs-cvar",
+          "asr-var-cvar"
+        ]
+      },
+      {
+        "title": "Corm paper (Probability Offloading)",
+        "repository_candidates": [
+          "asr-corm-probability-offloading",
+          "asr-corm-paper"
+        ]
+      },
+      {
+        "title": "Staif paper (Modelisation)",
+        "repository_candidates": [
+          "asr-staif-modelisation",
+          "asr-staif-paper"
+        ]
+      },
+      {
+        "title": "Systematic Portfolio Allocation And Dynamic Backtesting",
+        "repository_candidates": [
+          "asr-systematic-portfolio-allocation",
+          "asr-dynamic-backtesting"
+        ]
+      },
+      {
+        "title": "HRP",
+        "repository_candidates": [
+          "asr-hrp",
+          "asr-hierarchical-risk-parity"
+        ]
+      },
+      {
+        "title": "Deep Hedging",
+        "repository_candidates": [
+          "asr-deep-hedging"
+        ]
+      },
+      {
+        "title": "Agentic Trading Agent",
+        "repository_candidates": [
+          "asr-agentic-trading-agent"
+        ]
+      },
+      {
+        "title": "Regime Aware Robust Portfolio Optimisation with Traction Cost Control",
+        "repository_candidates": [
+          "asr-regime-aware-robust-portfolio-optimisation",
+          "asr-regime-aware-portfolio-optimisation"
+        ]
+      },
+      {
+        "title": "A perturbation theoretic analysis of turnover in ERC",
+        "repository_candidates": [
+          "asr-erc-turnover-perturbation",
+          "asr-erc-turnover"
+        ]
+      },
+      {
+        "title": "AI powered dynamic financial network analytics FMI WB JP morgan",
+        "repository_candidates": [
+          "asr-financial-network-analytics",
+          "asr-ai-financial-network-analytics"
+        ]
+      }
+    ]
+  },
+  "labels": {
+    "asr-announcement-request": {
+      "color": "8250df",
+      "description": "Request to publish an ASR announcement."
+    },
+    "asr-announcement-active": {
+      "color": "1f883d",
+      "description": "Approved announcement currently synchronized."
+    },
+    "asr-repository-request": {
+      "color": "0969da",
+      "description": "Request to create an organization repository."
+    },
+    "asr-processed": {
+      "color": "1a7f37",
+      "description": "Successfully processed by ASR automation."
+    },
+    "asr-rejected": {
+      "color": "cf222e",
+      "description": "Rejected by authorization or validation policy."
+    },
+    "asr-automation-error": {
+      "color": "d4a72c",
+      "description": "Automation could not complete the request."
+    },
+    "asr-announcements": {
+      "color": "8250df",
+      "description": "Repository announcement digest managed by ASR."
+    },
+    "asr-access-setup": {
+      "color": "bf8700",
+      "description": "One-time GitHub access configuration task."
+    }
+  },
+  "schedule_minutes": 15,
+  "max_repository_creations_per_run": 5
+}
