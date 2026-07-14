@@ -39,6 +39,7 @@ USER_AGENT = "asr-admin-console-reconciler"
 MAX_RETRIES = 5
 MUTATION_DELAY_SECONDS = 0.75
 ANNOUNCEMENT_DIGEST_TITLE = "[ASR] Announcements"
+REPOSITORY_TEXT_FIELD = "Repository name"
 ANNOUNCEMENT_MARKER = "<!-- asr-announcement-digest:v1 -->"
 PROJECT_ITEM_MARKER = "<!-- asr-incoming-project:v1 -->"
 ACCESS_SETUP_TITLE = '[Setup] Restrict "Incoming projects" editing access'
@@ -932,7 +933,7 @@ class Reconciler:
                 self.config["incoming_project"]["status_options"],
             ),
             ("Progress (%)", "NUMBER", None),
-            ("Repository", "TEXT", None),
+            (REPOSITORY_TEXT_FIELD, "TEXT", None),
             ("Last activity", "DATE", None),
             ("Automation note", "TEXT", None),
         ]
@@ -1168,7 +1169,7 @@ class Reconciler:
             name: fields.get(name)
             for name in (
                 "Progress (%)",
-                "Repository",
+                REPOSITORY_TEXT_FIELD,
                 "Last activity",
                 "Automation note",
             )
@@ -1203,7 +1204,7 @@ class Reconciler:
             if before.get("repository") != metric.repository:
                 changes.append(
                     (
-                        required_fields["Repository"]["id"],
+                        required_fields[REPOSITORY_TEXT_FIELD]["id"],
                         {"text": repository_value},
                     )
                 )
