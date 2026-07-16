@@ -32,8 +32,11 @@
   <a href="https://www.linkedin.com/company/alpha-stochastic-research">
     <img src="https://img.shields.io/badge/LinkedIn-Alpha%20Stochastic%20Research-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="https://www.ssrn.com/">
-    <img src="https://img.shields.io/badge/SSRN-Working%20Papers-8B0000?style=for-the-badge" alt="SSRN">
+  <a href="https://zenodo.org/communities/stochastic-research">
+    <img src="https://img.shields.io/badge/Zenodo-ASR%20Community-1682D4?style=for-the-badge" alt="Zenodo">
+  </a>
+  <a href="https://discord.gg/B82eRmmkrx">
+    <img src="https://img.shields.io/badge/Discord-Join%20the%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
   </a>
   <a href="https://medium.com/@alpha.stochastic.research">
     <img src="https://img.shields.io/badge/Medium-Research%20Articles-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium">
@@ -57,9 +60,9 @@
 
 **Alpha Stochastic Research (ASR)** is an independent quantitative finance research laboratory dedicated to advancing rigorous, transparent, and reproducible research at the intersection of financial markets, mathematics, statistics, stochastic modelling, scientific computing, and artificial intelligence.
 
-ASR develops research projects, technical articles, educational resources, numerical experiments, and open-source implementations designed to bridge academic theory and real-world financial applications.
+ASR develops research projects, technical articles, educational resources, numerical experiments, open-source software, and reproducible publications designed to bridge academic theory and real-world financial applications.
 
-Our work focuses on transforming complex financial data into robust models, measurable insights, and evidence-based financial decisions.
+Our work focuses on transforming complex financial data into robust models, measurable insights, reusable scientific tools, and evidence-based financial decisions.
 
 ---
 
@@ -67,7 +70,7 @@ Our work focuses on transforming complex financial data into robust models, meas
 
 Our mission is to advance quantitative finance through open, rigorous, and reproducible scientific research.
 
-We aim to build a research ecosystem where mathematical theory, statistical inference, computational modelling, and financial engineering converge to support better understanding of markets, risk, investment, and decision-making.
+We aim to build a research ecosystem where mathematical theory, statistical inference, computational modelling, and financial engineering converge to support a better understanding of markets, risk, investment, and decision-making.
 
 ---
 
@@ -171,9 +174,33 @@ ASR is built around a set of core scientific principles.
 
 ---
 
+## Published Research and Software Releases
+
+| Output | Type | Status | DOI |
+|---|---|---|---|
+| **Bachelier’s Theory of Speculation Revisited: A Reproducible Reconstruction of the Origins of Quantitative Finance** | Preprint | Published on Zenodo | [10.5281/zenodo.21385499](https://doi.org/10.5281/zenodo.21385499) |
+| **Alpha Stochastic Research: Open Research and Reproducibility Framework** | Research report | Published on Zenodo | [10.5281/zenodo.21379982](https://doi.org/10.5281/zenodo.21379982) |
+| **asr-open-sc v0.3.2** | Open-source software | Released and archived on Zenodo | [10.5281/zenodo.21382430](https://doi.org/10.5281/zenodo.21382430) |
+
+<p align="center">
+  <a href="https://doi.org/10.5281/zenodo.21385499">
+    <img src="https://img.shields.io/badge/Bachelier%20Preprint-10.5281%2Fzenodo.21385499-1682D4?style=for-the-badge" alt="Bachelier DOI">
+  </a>
+  <a href="https://doi.org/10.5281/zenodo.21379982">
+    <img src="https://img.shields.io/badge/ASR%20Framework-10.5281%2Fzenodo.21379982-1682D4?style=for-the-badge" alt="Framework DOI">
+  </a>
+  <a href="https://doi.org/10.5281/zenodo.21382430">
+    <img src="https://img.shields.io/badge/asr--open--sc%20v0.3.2-10.5281%2Fzenodo.21382430-1682D4?style=for-the-badge" alt="asr-open-sc DOI">
+  </a>
+</p>
+
+> **Publication status:** ASR currently publishes and archives research outputs through Zenodo. SSRN dissemination is planned for selected working papers, but no SSRN identifier is listed until a public SSRN record exists.
+
+---
+
 ## Open-Source Ecosystem
 
-ASR projects are organized around research, implementation, documentation, and education.
+ASR projects are organized around research, implementation, documentation, publication, and education.
 
 ```text
 Alpha Stochastic Research
@@ -188,17 +215,25 @@ Alpha Stochastic Research
 └── Research Publications
 ```
 
+The shared open-science ecosystem is coordinated through:
+
+- [`asr-open-sc`](https://github.com/Alpha-Stochastic-Research/asr-open-sc)
+- the [ASR Zenodo community](https://zenodo.org/communities/stochastic-research)
+- the [ASR GitHub organization](https://github.com/Alpha-Stochastic-Research)
+
 ---
 
 ## Featured Projects
 
-| Project | Area | Description | Status |
-|--------|------|-------------|--------|
-| **Theory of Speculation** | Financial Mathematics | Reproducible implementation of Louis Bachelier's 1900 foundational work. | Active |
-| **Portfolio Optimization** | Asset Management | Research implementations for portfolio construction, allocation, and risk budgeting. | Planned |
-| **Risk Management** | Quantitative Risk | Models for VaR, Expected Shortfall, stress testing, and risk attribution. | Planned |
-| **Financial Machine Learning** | AI in Finance | Machine learning methods for financial modelling, forecasting, and signal analysis. | Planned |
-| **Derivatives Pricing** | Financial Engineering | Numerical methods for option pricing, stochastic models, and calibration. | Planned |
+| Project | Area | Description | Status | DOI / Repository |
+|--------|------|-------------|--------|------------------|
+| **Theory of Speculation** | Financial Mathematics | Reproducible reconstruction of Louis Bachelier’s 1900 foundational work, including arithmetic Brownian motion, option pricing, Monte Carlo validation, and an accompanying Python package. | **Preprint published · package active** | [10.5281/zenodo.21385499](https://doi.org/10.5281/zenodo.21385499) |
+| **ASR Open Research Framework** | Open Science | Institutional framework for transparent, reproducible, and openly archived quantitative research. | **Published** | [10.5281/zenodo.21379982](https://doi.org/10.5281/zenodo.21379982) |
+| **asr-open-sc** | Scientific Computing | Shared registry and infrastructure for the modular ASR Python ecosystem. | **v0.3.2 released** | [10.5281/zenodo.21382430](https://doi.org/10.5281/zenodo.21382430) |
+| **Portfolio Optimization** | Asset Management | Research implementations for portfolio construction, allocation, and risk budgeting. | Planned | DOI pending publication |
+| **Risk Management** | Quantitative Risk | Models for VaR, Expected Shortfall, stress testing, and risk attribution. | Active research | DOI pending publication |
+| **Financial Machine Learning** | AI in Finance | Machine-learning methods for financial modelling, forecasting, and signal analysis. | Planned | Not yet published |
+| **Derivatives Pricing** | Financial Engineering | Numerical methods for option pricing, stochastic models, and calibration. | Planned | Not yet published |
 
 ---
 
@@ -229,15 +264,17 @@ Alpha Stochastic Research
 
 ## Publications and Research Channels
 
-ASR publishes research and educational content through several channels.
+ASR publishes research, software, and educational content through several channels.
 
-| Platform | Purpose |
-|---------|---------|
-| **GitHub** | Open-source implementations, reproducible research, and project documentation. |
-| **SSRN** | Working papers, preprints, and academic research manuscripts. |
+| Platform | Current status and purpose |
+|---------|----------------------------|
+| **Zenodo** | Active public archive for ASR preprints, technical reports, software releases, and persistent DOI records. [Visit the ASR community](https://zenodo.org/communities/stochastic-research). |
+| **GitHub** | Open-source implementations, reproducible research, project documentation, issue tracking, and software development. |
+| **SSRN** | Planned dissemination channel for selected working papers and preprints. |
 | **Medium** | Technical articles, tutorials, and educational explanations. |
 | **Substack** | Research notes, updates, essays, and community publications. |
 | **LinkedIn** | Institutional updates, project announcements, and professional communication. |
+| **Discord** | Research community collaboration and discussion. [Join the ASR community](https://discord.gg/B82eRmmkrx). |
 | **Website** | Official ASR hub for research, projects, publications, and contact. |
 
 ---
@@ -249,22 +286,23 @@ ASR is currently focused on building a coherent open-source research foundation 
 <details>
 <summary><strong>Research Reproductions</strong></summary>
 
-- Louis Bachelier, *Théorie de la Spéculation* (1900)
-- Markowitz, *Portfolio Selection* (1952)
-- Black and Scholes, *The Pricing of Options and Corporate Liabilities* (1973)
-- Merton, *Theory of Rational Option Pricing* (1973)
-- Vasicek, *An Equilibrium Characterization of the Term Structure* (1977)
+- Louis Bachelier, *Théorie de la Spéculation* (1900) — **preprint published; package active**
+- Markowitz, *Portfolio Selection* (1952) — planned
+- Black and Scholes, *The Pricing of Options and Corporate Liabilities* (1973) — planned
+- Merton, *Theory of Rational Option Pricing* (1973) — planned
+- Vasicek, *An Equilibrium Characterization of the Term Structure* (1977) — planned
 
 </details>
 
 <details>
 <summary><strong>Quantitative Libraries</strong></summary>
 
+- `asr-open-sc` — **v0.3.2 released**
 - Portfolio optimization
 - Risk management
 - Stochastic processes
 - Derivatives pricing
-- Time series modelling
+- Time-series modelling
 - Financial machine learning
 - Scientific computing tools
 
@@ -291,31 +329,31 @@ ASR repositories are designed to follow consistent open-source research standard
 Each project should include, when applicable:
 
 ```text
-.github/
-│
-├── README.md
-├── LICENSE
-├── CITATION.cff
-├── requirements.txt
-├── pyproject.toml
-│
+.
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   └── workflows/
+├── docs/
+├── examples/
+├── figures/
+├── notebooks/
+├── paper/
 ├── src/
 ├── tests/
-├── notebooks/
-├── examples/
-├── docs/
-├── figures/
-├── paper/
-│
-└── .github/
-    └── workflows/
+├── CITATION.cff
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── REPRODUCIBILITY.md
+├── pyproject.toml
+└── requirements.txt
 ```
 
 ---
 
 ## Contribution Philosophy
 
-ASR welcomes thoughtful contributions that improve the scientific, educational, or technical quality of the projects.
+ASR welcomes thoughtful contributions that improve the scientific, educational, or technical quality of its projects.
 
 Contributions may include:
 
@@ -352,8 +390,16 @@ Please read the contribution guidelines before opening a pull request.
 <td><a href="https://www.linkedin.com/company/alpha-stochastic-research">Alpha Stochastic Research</a></td>
 </tr>
 <tr>
+<td><strong>Zenodo</strong></td>
+<td><a href="https://zenodo.org/communities/stochastic-research">ASR Zenodo Community</a></td>
+</tr>
+<tr>
+<td><strong>Discord</strong></td>
+<td><a href="https://discord.gg/B82eRmmkrx">Join the ASR Community</a></td>
+</tr>
+<tr>
 <td><strong>SSRN</strong></td>
-<td><a href="https://www.ssrn.com/">ASR Working Papers</a></td>
+<td>Working-paper channel planned; public profile link pending.</td>
 </tr>
 <tr>
 <td><strong>Medium</strong></td>
@@ -393,3 +439,4 @@ ASR aims to contribute to a more transparent, reproducible, and intellectually r
 <p align="center">
   © 2026 Alpha Stochastic Research
 </p>
+
