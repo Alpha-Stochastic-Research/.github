@@ -145,6 +145,7 @@ Research → Modelling → Analysis → Impact
 ### Artificial Intelligence in Finance
 
 - Financial machine learning
+- Deep hedging and neural hedging policies
 - Forecasting models
 - Risk analytics
 - Pattern recognition
@@ -176,11 +177,24 @@ ASR is built around a set of core scientific principles.
 
 ## Published Research and Software Releases
 
-| Output | Type | Status | DOI |
+| Output | Type | Status | DOI / Release |
 |---|---|---|---|
+| **Deep Hedging under Transaction Costs: An Auditable NumPy Implementation and Exploratory Study** | Preprint and research software | **Preprint published · `asr-deep-hedging` v0.2.0 released** | [Paper DOI](https://doi.org/10.5281/zenodo.21519919) · [GitHub release](https://github.com/Alpha-Stochastic-Research/asr-deep-hedging/releases) |
 | **Bachelier’s Theory of Speculation Revisited: A Reproducible Reconstruction of the Origins of Quantitative Finance** | Preprint | Published on Zenodo | [10.5281/zenodo.21385499](https://doi.org/10.5281/zenodo.21385499) |
 | **Alpha Stochastic Research: Open Research and Reproducibility Framework** | Research report | Published on Zenodo | [10.5281/zenodo.21379982](https://doi.org/10.5281/zenodo.21379982) |
 | **asr-open-sc v0.3.2** | Open-source software | Released and archived on Zenodo | [10.5281/zenodo.21382430](https://doi.org/10.5281/zenodo.21382430) |
+
+<p align="center">
+  <a href="https://doi.org/10.5281/zenodo.21519919">
+    <img src="https://img.shields.io/badge/Deep%20Hedging-10.5281%2Fzenodo.21519919-1682D4?style=for-the-badge" alt="Deep Hedging DOI">
+  </a>
+  <a href="https://github.com/Alpha-Stochastic-Research/asr-deep-hedging/releases">
+    <img src="https://img.shields.io/badge/asr--deep--hedging-v0.2.0-0F766E?style=for-the-badge&logo=github&logoColor=white" alt="asr-deep-hedging v0.2.0">
+  </a>
+  <a href="https://pypi.org/project/asr-deep-hedging/">
+    <img src="https://img.shields.io/badge/PyPI-asr--deep--hedging-3775A9?style=for-the-badge&logo=pypi&logoColor=white" alt="asr-deep-hedging on PyPI">
+  </a>
+</p>
 
 <p align="center">
   <a href="https://doi.org/10.5281/zenodo.21385499">
@@ -194,7 +208,50 @@ ASR is built around a set of core scientific principles.
   </a>
 </p>
 
-> **Publication status:** ASR currently publishes and archives research outputs through Zenodo. SSRN dissemination is planned for selected working papers, but no SSRN identifier is listed until a public SSRN record exists.
+> **Publication status:** ASR currently publishes and archives research outputs through Zenodo. Software is released through GitHub and, where applicable, distributed through PyPI. SSRN dissemination is planned for selected working papers, but no SSRN identifier is listed until a public SSRN record exists.
+
+---
+
+## Latest Project Release — ASR Deep Hedging v0.2.0
+
+[`asr-deep-hedging`](https://github.com/Alpha-Stochastic-Research/asr-deep-hedging) is an auditable NumPy research framework for discrete-time neural option hedging under transaction costs.
+
+The project combines:
+
+- exact finite-sample empirical CVaR estimation and tail weighting;
+- Geometric Brownian Motion and full-truncation Heston simulation;
+- proportional and quadratic transaction-cost models;
+- state-only and inventory-aware neural hedging policies;
+- manually implemented NumPy forward and backward passes;
+- pathwise hedging-loss gradients;
+- Black–Scholes and cost-aware benchmark strategies;
+- evaluation metrics, paired-bootstrap comparisons, tests, and reproducible experiment configurations.
+
+Version **0.2.0** aligns the public Python API with the documented examples. Core training, optimization, benchmark, evaluation, risk, simulation, feature, and inventory-policy utilities can now be imported directly from `deep_hedging`, while the original module-level imports remain available for backward compatibility.
+
+```bash
+python -m pip install --upgrade asr-deep-hedging
+```
+
+```python
+from deep_hedging import (
+    Adam,
+    TanhMLP,
+    black_scholes_delta,
+    evaluate_positions,
+    simulate_gbm,
+    train_step,
+)
+```
+
+| Resource | Link |
+|---|---|
+| **Research paper** | [Deep Hedging under Transaction Costs](https://doi.org/10.5281/zenodo.21519919) |
+| **Source code** | [Alpha-Stochastic-Research/asr-deep-hedging](https://github.com/Alpha-Stochastic-Research/asr-deep-hedging) |
+| **Latest release** | [ASR Deep Hedging v0.2.0](https://github.com/Alpha-Stochastic-Research/asr-deep-hedging/releases) |
+| **Python package** | [asr-deep-hedging on PyPI](https://pypi.org/project/asr-deep-hedging/) |
+
+> **Scope:** The software is intended for methodological research, numerical validation, reproducibility, and education. It is not a live-trading system or investment recommendation.
 
 ---
 
@@ -218,6 +275,7 @@ Alpha Stochastic Research
 The shared open-science ecosystem is coordinated through:
 
 - [`asr-open-sc`](https://github.com/Alpha-Stochastic-Research/asr-open-sc)
+- [`asr-deep-hedging`](https://github.com/Alpha-Stochastic-Research/asr-deep-hedging)
 - the [ASR Zenodo community](https://zenodo.org/communities/stochastic-research)
 - the [ASR GitHub organization](https://github.com/Alpha-Stochastic-Research)
 
@@ -227,6 +285,7 @@ The shared open-science ecosystem is coordinated through:
 
 | Project | Area | Description | Status | DOI / Repository |
 |--------|------|-------------|--------|------------------|
+| **ASR Deep Hedging** | Derivatives · Risk Management · Machine Learning | Auditable NumPy framework for neural option hedging under discrete rebalancing and transaction costs, with empirical CVaR optimization, GBM and Heston simulation, manual gradients, benchmark strategies, and reproducible evaluation. | **Preprint published · v0.2.0 released** | [Paper DOI](https://doi.org/10.5281/zenodo.21519919) · [Repository](https://github.com/Alpha-Stochastic-Research/asr-deep-hedging) · [PyPI](https://pypi.org/project/asr-deep-hedging/) |
 | **Theory of Speculation** | Financial Mathematics | Reproducible reconstruction of Louis Bachelier’s 1900 foundational work, including arithmetic Brownian motion, option pricing, Monte Carlo validation, and an accompanying Python package. | **Preprint published · package active** | [10.5281/zenodo.21385499](https://doi.org/10.5281/zenodo.21385499) |
 | **ASR Open Research Framework** | Open Science | Institutional framework for transparent, reproducible, and openly archived quantitative research. | **Published** | [10.5281/zenodo.21379982](https://doi.org/10.5281/zenodo.21379982) |
 | **asr-open-sc** | Scientific Computing | Shared registry and infrastructure for the modular ASR Python ecosystem. | **v0.3.2 released** | [10.5281/zenodo.21382430](https://doi.org/10.5281/zenodo.21382430) |
@@ -298,6 +357,7 @@ ASR is currently focused on building a coherent open-source research foundation 
 <summary><strong>Quantitative Libraries</strong></summary>
 
 - `asr-open-sc` — **v0.3.2 released**
+- [`asr-deep-hedging`](https://github.com/Alpha-Stochastic-Research/asr-deep-hedging) — **v0.2.0 released; preprint published**
 - Portfolio optimization
 - Risk management
 - Stochastic processes
