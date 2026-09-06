@@ -1,6 +1,5 @@
 <div align="center">
 
-<img src="https://www.asr-lab.online/assets/images/logo_full.png?v=13.2.1" alt="Alpha Stochastic Research" width="185">
 
 # Alpha Stochastic Research
 
