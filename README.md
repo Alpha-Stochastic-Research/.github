@@ -1,82 +1,32 @@
-# Alpha Stochastic Research Community Files
+# Alpha Stochastic Research Inc. — Organization Configuration
 
-This repository contains the default community health files and organization profile for **Alpha Stochastic Research (ASR)**.
+This repository hosts the **public GitHub organization profile** and the default community-health configuration for **Alpha Stochastic Research Inc. (ASR)**, an independent quantitative research and engineering company.
 
-Alpha Stochastic Research is an independent quantitative finance research laboratory focused on rigorous, transparent, and reproducible research at the intersection of financial markets, mathematics, statistics, stochastic modelling, scientific computing, and artificial intelligence.
+**Public profile:** [profile/README.md](profile/README.md) · **Company:** https://www.asr-lab.online · **Applications:** https://www.asr-lab.online/apply/
 
----
+## What ASR does
 
-## Purpose
+ASR's operating sequence is **Research → independent Analyst validation → Quant Engineering → risk and release review → authorized delivery and monitoring**. Proprietary systems such as **QForge** are internal to specifically authorized personnel; the public organization profile describes products and scientific work, not rights to access private source code.
 
-This repository provides organization-wide defaults for ASR repositories, including:
+## Default files
 
-- Organization profile README
-- Issue templates
-- Pull request template
-- Contribution guidelines
-- Code of conduct
-- Security policy
-- Citation metadata
-- Governance principles
-- Support information
-- Research roadmap
+This repository defines organization-wide defaults for public and permitted collaborative repositories:
 
-These files help standardize the structure, quality, and contribution workflow across ASR open-source research projects.
+- [Organization profile](profile/README.md)
+- [Contribution guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Governance](GOVERNANCE.md), [Security](SECURITY.md) and [Support](SUPPORT.md)
+- Issue and pull request templates, citation and repository standards
 
----
+Individual repositories may impose stricter scientific, confidentiality, security, intellectual-property and review conditions. Project-specific policies take precedence where appropriate.
 
-## Repository Structure
+## Access and publication
 
-```text
-.github
-├── profile/
-│   ├── README.md
-│   ├── logo.png
-│   └── banner.png
-├── .github/
-│   └── ISSUE_TEMPLATE/
-│       ├── bug_report.yml
-│       ├── feature_request.yml
-│       ├── research_proposal.yml
-│       └── question.yml
-├── PULL_REQUEST_TEMPLATE.md
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-├── SECURITY.md
-├── SUPPORT.md
-├── GOVERNANCE.md
-├── ROADMAP.md
-├── CITATION.cff
-├── FUNDING.yml
-└── LICENSE
-```
+Public research contributions are distinct from private company engineering assignments. Neither organizational membership nor a GitHub invitation grants a general license to disclose, fork or redistribute confidential implementations, strategies or market data. Review the specific repository's LICENSE and written access authorization before using any material.
+
+For official openings—including **Quant Research Intern, Quant Analyst Intern and Quant Engineer Intern**—visit [ASR Careers](https://www.asr-lab.online/careers/). For institutional enquiries, visit [Services](https://www.asr-lab.online/services/).
+
+**Contact:** [contact@asr-lab.online](mailto:contact@asr-lab.online) · [research@asr-lab.online](mailto:research@asr-lab.online)
 
 ---
 
-## Organization Profile
-
-The public organization profile is defined in:
-
-```text
-profile/README.md
-```
-
-It appears on the public GitHub profile page of Alpha Stochastic Research.
-
----
-
-## Default Community Health Files
-
-The files in this repository are intended to serve as default community standards for ASR repositories.
-
-Individual repositories may override these defaults by adding their own repository-specific files.
-
----
-
-## Website
-
-https://asr-lab.online
-
-## Contact
-
-research@asr-lab.online
+*© 2026 Alpha Stochastic Research Inc. Research content is not investment advice.*
