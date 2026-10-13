@@ -1,131 +1,112 @@
 <div align="center">
 
+<img src="https://www.asr-lab.online/favicon-32.png?v=13.27.34" width="48" height="48" alt="Official ASR mark">
 
-# Alpha Stochastic Research
+# Alpha Stochastic Research Inc.
 
-### Independent Quantitative Finance Research Laboratory
+**Independent Quantitative Research & Engineering Company**
 
-**Research · Modelling · Analysis · Impact**
+*From investment ideas to independently validated, implementable quantitative strategies.*
 
-<br>
-
-[![Website](https://img.shields.io/badge/Website-asr--lab.online-0A2540?style=for-the-badge\&logo=googlechrome\&logoColor=white)](https://www.asr-lab.online)
-[![Publications](https://img.shields.io/badge/Research-Publications-163B65?style=for-the-badge\&logo=readthedocs\&logoColor=white)](https://www.asr-lab.online/publications/)
-[![GitHub](https://img.shields.io/badge/GitHub-Research%20Repositories-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/Alpha-Stochastic-Research)
-[![Zenodo](https://img.shields.io/badge/Zenodo-ASR%20Community-1682D4?style=for-the-badge)](https://zenodo.org/communities/stochastic-research)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Alpha%20Stochastic%20Research-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/company/alpha-stochastic-research)
+[Website](https://www.asr-lab.online/) · [Research](https://www.asr-lab.online/research/) · [Services](https://www.asr-lab.online/services/) · [Careers](https://www.asr-lab.online/careers/) · [Apply](https://www.asr-lab.online/apply/)
 
 </div>
 
 ---
 
-## About ASR
+## What we do
 
-**Alpha Stochastic Research (ASR)** is an independent quantitative finance laboratory dedicated to rigorous, transparent, and reproducible work across financial markets, mathematics, statistics, stochastic modelling, scientific computing, and artificial intelligence.
+**Alpha Stochastic Research (ASR)** combines quantitative research, independent validation and engineering to turn well-defined investment and risk questions into testable models, strategies and software.
 
-ASR brings together research, implementation, validation, and technical communication within a common scientific framework. Our work connects quantitative theory with auditable computational research and practical financial modelling.
+Our work spans financial mathematics, stochastic modelling, statistics, scientific computing, systematic strategies, fixed income and interest-rate derivatives, pricing and hedging, portfolio risk, and execution research.
 
-<table>
-<tr>
-<td width="33%" valign="top">
+At ASR, **a promising research result, an independently validated strategy and an approved implementation are not the same thing**. Every stage calls for documented assumptions, evidence and review.
 
-### Research
+## Research → Independent Validation → Engineering
 
-Mathematical and empirical investigation of problems in quantitative finance.
+| Stage | Owner | Key output |
+| :--- | :--- | :--- |
+| **01 · Research** | Research Team | Hypotheses, point-in-time datasets, signal logic, reproducible research and strategy/data contracts |
+| **02 · Independent Validation** | Analyst Team | Replication, robustness checks, leakage and cost scrutiny, independent validation findings |
+| **03 · Implementation** | Quant Engineering Team | C++ implementation, tests, controlled replay and simulation, engineering evidence |
+| **04 · Risk & Release** | Authorized risk, governance and delivery functions | Risk controls, rights checks, release decisions, monitoring and research feedback |
 
-</td>
-<td width="33%" valign="top">
+Passing a backtest, reporting attractive P&L or compiling software does **not** by itself authorize live trading, external distribution or the deployment of capital.
 
-### Modelling
+### Teams and governance
 
-Stochastic, statistical, numerical, optimization, and machine-learning methods.
+- **Research:** hypotheses, research data provenance, signal construction and documentation.
+- **Analyst:** independent validation, challenge, sensitivity analysis and review.
+- **Quant Engineering:** strategy implementation, QForge, replay, simulation, engineering tests and evidence.
+- **Quant Associates (QA):** specialist partners whose work is subject to mandates approved by the **ASR Board Council**.
+- **Industry & Ambassadors:** professional relationships, partnerships, community representation and outreach.
+- **Leadership & ASR Board Council:** coordination, strategic direction, governance and relevant approvals.
 
-</td>
-<td width="33%" valign="top">
+## Technology ecosystem
 
-### Reproducibility
+| Platform | What it is for | Access |
+| :--- | :--- | :--- |
+| **[OrunMila](https://www.asr-lab.online/orunmila/)** | Market intelligence, research discovery and analytical workflows | Features and access vary by product and account |
+| **[ASRQuant](https://www.asr-lab.online/asrquant/)** | Python quantitative research, modelling and analysis tools | Public-facing library and documentation |
+| **[QForge](https://www.asr-lab.online/qforge/)** | **Proprietary C++ quantitative engineering engine** for replay, simulation, internal paper execution, risk controls and reproducible evidence | Restricted internal source; public product overview only |
 
-Versioned code, documented methodology, validation, and traceable research outputs.
+Each platform supports a different part of ASR's process. The availability of simulations, paper execution or a signal/API contract should not be interpreted as proof of brokerage certification or production trading.
 
-</td>
-</tr>
-</table>
+## Research focus
 
-## Research Areas
+| Quantitative finance | Mathematical and computational methods |
+| :--- | :--- |
+| Fixed income, curves and interest-rate derivatives | Stochastic processes and numerical methods |
+| Derivatives pricing, volatility and hedging | Monte Carlo, calibration and optimization |
+| Portfolio construction, stress and tail risk | Econometrics, statistics and machine learning |
+| Systematic strategies, regimes and backtesting | Scientific computing and reproducibility |
+| Execution research and market microstructure | C++ engineering, testing and controlled replay |
 
-| Quantitative Finance                 | Mathematical & Computational Methods   |
-| ------------------------------------ | -------------------------------------- |
-| Derivatives pricing & hedging        | Stochastic processes & probability     |
-| Interest-rate & volatility modelling | Numerical methods & Monte Carlo        |
-| Portfolio construction & risk        | Statistics & financial econometrics    |
-| Systematic research & backtesting    | Optimization & machine learning        |
-| Market and model validation          | Scientific computing & reproducibility |
+### Selected research records
 
-## Research Record
+- [Joint Learning of Local-Stochastic Volatility Calibration: A Projection-Constrained Neural Operator Approach](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7240319) — volatility modelling and calibration.
+- [ASRQuant: From Scientific Literature to Auditable Quantitative Decisions and Algorithmic Trading](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7217798) — quantitative research infrastructure.
+- [Non-Asymptotic Stability and Turnover of Risk-Parity Allocations](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7187538) — portfolio construction and risk.
+- [Bachelier’s Theory of Speculation Revisited](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7089998) — mathematical finance and reproducibility.
 
-ASR publishes working papers, research software, technical documentation, and reproducibility materials through institutional and open-science channels.
+Browse [ASR Publications](https://www.asr-lab.online/publications/), [public research repositories](https://github.com/orgs/Alpha-Stochastic-Research/repositories), and the [ASR Zenodo community](https://zenodo.org/communities/stochastic-research).
 
-### Selected SSRN Research
+Our **[Research Perspectives](https://www.asr-lab.online/research-perspectives/)** series connects quantitative ideas with the researchers, mathematics and original scientific literature behind them.
 
-| Research                                                                                                                  | Area                                             | Record                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------------- |
-| **Joint Learning of Local-Stochastic Volatility Calibration: A Projection-Constrained Neural Operator Approach**          | Derivatives · LSV · Neural Operators             | [SSRN 7240319](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7240319) |
-| **ASRQuant: From Scientific Literature to Auditable Quantitative Decisions and Algorithmic Trading**                      | Research Infrastructure · Quantitative Computing | [SSRN 7217798](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7217798) |
-| **From Forecast-Centric to Trading-Aware: A Risk-Constrained Decision Layer for Agentic Financial Time-Series Workflows** | Time Series · Risk · Agentic Systems             | [SSRN 7217521](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7217521) |
-| **Non-Asymptotic Stability and Turnover of Risk-Parity Allocations: ERC Smoothness and Hierarchical Boundary Effects**    | Portfolio Risk · ERC · Hierarchical Allocation   | [SSRN 7187538](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7187538) |
-| **Bachelier’s Theory of Speculation Revisited: A Reproducible Reconstruction of the Origins of Quantitative Finance**     | Financial Mathematics · Reproducibility          | [SSRN 7089998](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7089998) |
+## Training, internships and careers
 
-### Open Research Infrastructure
+ASR develops structured technical education, supervised research experience and selected opportunities to work with its teams.
 
-* **GitHub** — source code, research repositories, tests, notebooks, and technical documentation.
-* **Zenodo** — persistent archival records, research outputs, and software releases with DOIs.
-* **ASR Publications** — institutional research record connecting projects, contributors, and reproducibility resources.
-* **SSRN** — dissemination of selected working papers and quantitative research.
+- **[FIIDQ](https://www.asr-lab.online/training/):** fixed-income and interest-rate derivatives quantitative training with practical exercises and assessment. ASR is a CPD provider; the programme terms determine the recognition applicable to each activity.
+- **Two-month immersive internships:** **Quant Research Intern**, **Quant Analyst Intern** and **Quant Engineer Intern** — each aligned with its team and supervised technical work.
+- **Research and professional roles:** opportunities may also be available in Research, Analyst, Quant Engineering, Industry and Ambassador activities.
+
+Published opportunities define cohort dates, eligibility, supervision, compensation, contracts and available places. Applying does not guarantee admission, employment or an equity award.
+
+[Explore opportunities](https://www.asr-lab.online/careers/) · [Apply to ASR](https://www.asr-lab.online/apply/)
+
+## Standards and responsible research
+
+We prioritize **point-in-time data integrity, scientific rigour, reproducibility, independent review, clear risk limits, versioned code, testing, and transparent reporting of assumptions and limitations**.
+
+Some research is public; other strategies, software, data and client work remain confidential or proprietary. Public access to a project never grants access to restricted QForge source or other private ASR materials. Each repository's license and contribution terms govern its use.
+
+## Connect with ASR
+
+For research, software, institutional projects, partnerships or opportunities:
+
+[Institutional services](https://www.asr-lab.online/services/) · [General enquiries](mailto:contact@asr-lab.online) · [Research enquiries](mailto:research@asr-lab.online)
 
 <div align="center">
 
-[**Browse ASR Publications →**](https://www.asr-lab.online/publications/)   ·  
-[**Trainee Program  →**](https://www.asr-lab.online/apply/index.html)   ·  
-[**Explore Research Repositories →**](https://github.com/Alpha-Stochastic-Research)   ·  
-[**Open Zenodo Community →**](https://zenodo.org/communities/stochastic-research)
-
-</div>
-
-## Scientific Standards
-
-Every ASR research project is expected to prioritize:
-
-**Mathematical rigour** · **Reproducibility** · **Transparency** · **Validation** · **Scientific integrity**
-
-Where applicable, research repositories include versioned implementations, tests, reproducible notebooks, methodology documentation, citation metadata, assumptions, limitations, and archival references.
-
-## Research & Community
-
-ASR also develops structured training, reading sessions, technical meetings, and collaborative research workflows designed to help participants progress from quantitative foundations to reproducible research contributions.
-
-Contributions to public repositories should follow the governance and contribution requirements defined by the relevant project.
-
-## Connect
-
-|                      |                                                                                         |
-| -------------------- | --------------------------------------------------------------------------------------- |
-| **Website**          | [asr-lab.online](https://www.asr-lab.online)                                            |
-| **Publications**     | [ASR Research Record](https://www.asr-lab.online/publications/)                         |
-| **GitHub**           | [Alpha-Stochastic-Research](https://github.com/Alpha-Stochastic-Research)               |
-| **Zenodo**           | [ASR Community](https://zenodo.org/communities/stochastic-research)                     |
-| **LinkedIn**         | [Alpha Stochastic Research](https://www.linkedin.com/company/alpha-stochastic-research) |
-| **Research contact** | [research@asr-lab.online](mailto:research@asr-lab.online)                               |
+[LinkedIn](https://www.linkedin.com/company/alpha-stochastic-research) · [X / @asrQlab](https://x.com/asrQlab) · [Instagram / @asrqlab](https://www.instagram.com/asrqlab/) · [GitHub](https://github.com/Alpha-Stochastic-Research)
 
 ---
 
-<div align="center">
+**Alpha Stochastic Research Inc.**
 
-**Alpha Stochastic Research**
+*Quantitative Research · Independent Validation · Engineering*
 
-*Independent Quantitative Finance Research Laboratory*
-
-**Research · Modelling · Analysis · Impact**
-
-<sub>Research and educational content is not financial advice.</sub>
+<sub>Research and software information is educational and technical in nature and is not investment advice.</sub>
 
 </div>
