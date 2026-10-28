@@ -86,7 +86,7 @@ ASR emphasizes documented data provenance, point-in-time correctness, independen
 
 ## Founder and institutional leadership
 
-**[Alpha Kabinet TOURE — Founder & Chairman, Noether Meridian Inc.](https://github.com/Alpha-Stochastic-Research/.github/blob/main/profile/leadership/alpha-kabinet-toure.md)**
+**[Alpha Kabinet TOURE — Founder & Chairman, Noether Meridian Inc.](https://noethermeridian.com/leadership/alpha-kabinet-toure/)**
 
 Read the founder's [institutional biography and verified publication directory](https://github.com/Alpha-Stochastic-Research/.github/blob/main/profile/leadership/alpha-kabinet-toure.md), including selected research works and professional references.
 

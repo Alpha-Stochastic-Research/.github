@@ -1,5 +1,7 @@
 # Alpha Kabinet TOURE
 
+**Official institutional biography:** [Alpha Kabinet TOURE — Noether Meridian Inc.](https://noethermeridian.com/leadership/alpha-kabinet-toure/)
+
 **Founder & Chairman, Noether Meridian Inc.**  
 **Co-founder, Alpha Stochastic Research (ASR)**
 
