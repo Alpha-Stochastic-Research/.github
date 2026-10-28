@@ -2,9 +2,9 @@
 
 <img src="https://www.asr-lab.online/favicon-32.png?v=13.27.34" alt="ASR mark" width="48" height="48">
 
-# Alpha Stochastic Research Inc.
+# Alpha Stochastic Research
 
-**Independent Quantitative Research & Engineering Company**
+**Quantitative Research Division of Noether Meridian Inc.**
 
 *From investment ideas to independently validated, implementable quantitative strategies.*
 
@@ -16,7 +16,7 @@
 
 ## About ASR
 
-**Alpha Stochastic Research (ASR)** is an independent quantitative finance research and engineering company. Our work connects financial mathematics, statistics, stochastic modelling, data analysis and scientific computing with systematic strategy development.
+**Alpha Stochastic Research (ASR)** is the quantitative research division of Noether Meridian Inc., a Canadian corporation. Our work connects financial mathematics, statistics, stochastic modelling, data analysis and scientific computing with systematic strategy development.
 
 Research is not a trading signal by default. Hypotheses are documented, market-data provenance is examined, results are independently challenged, and only approved specifications proceed to implementation, simulation and controlled technical release.
 
@@ -84,6 +84,12 @@ Applications, selection, supervision, formal terms and compensation are assessed
 
 ASR emphasizes documented data provenance, point-in-time correctness, independent testing and review, risk controls, methodological transparency and reproducibility. Strategy publication, proprietary code access, client output and market-data redistribution require separate rights and authorization.
 
+## Founder and institutional leadership
+
+**[Alpha Kabinet TOURE — Founder & Chairman, Noether Meridian Inc.](https://github.com/Alpha-Stochastic-Research/.github/blob/main/profile/leadership/alpha-kabinet-toure.md)**
+
+Read the founder's [institutional biography and verified publication directory](https://github.com/Alpha-Stochastic-Research/.github/blob/main/profile/leadership/alpha-kabinet-toure.md), including selected research works and professional references.
+
 ## Work with us
 
 For institutional research, engineering or partnership enquiries, explore [ASR Services](https://www.asr-lab.online/services/) or email [contact@asr-lab.online](mailto:contact@asr-lab.online).
@@ -96,6 +102,6 @@ For research enquiries, write to [research@asr-lab.online](mailto:research@asr-l
 
 [LinkedIn](https://www.linkedin.com/company/alpha-stochastic-research) · [X / @asrQlab](https://x.com/asrQlab) · [Instagram / @asrqlab](https://www.instagram.com/asrqlab/) · [GitHub](https://github.com/Alpha-Stochastic-Research)
 
-<sub>© 2026 Alpha Stochastic Research Inc. · Quantitative research & engineering · Research content is not investment advice.</sub>
+<sub>© 2026 Alpha Stochastic Research · Research division of Noether Meridian Inc. · Research content is not investment advice.</sub>
 
 </div>
